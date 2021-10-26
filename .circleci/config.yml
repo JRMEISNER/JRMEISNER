@@ -1,0 +1,71 @@
+-----> Building on the Heroku-20 stack
+-----> Determining which buildpack to use for this app
+-----> Node.js app detected
+       
+-----> Creating runtime environment
+       
+       NPM_CONFIG_LOGLEVEL=error
+       USE_YARN_CACHE=true
+       NODE_VERBOSE=false
+       NODE_ENV=production
+       NODE_MODULES_CACHE=true
+       
+-----> Installing binaries
+       engines.node (package.json):  unspecified
+       engines.npm (package.json):   unspecified (use default)
+       engines.yarn (package.json):  unspecified (use default)
+       
+       Resolving node version 14.x...
+       Downloading and installing node 14.17.5...
+       Using default npm version: 6.14.14
+       Resolving yarn version 1.22.x...
+       Downloading and installing yarn (1.22.11)
+       Installed yarn 1.22.11
+       
+-----> Installing dependencies
+       Installing node modules (yarn.lock)
+       yarn install v1.22.11
+       warning package.json: No license field
+       warning No license field
+       [1/4] Resolving packages...
+       [2/4] Fetching packages...
+       [3/4] Linking dependencies...
+       [4/4] Building fresh packages...
+       Done in 4.49s.
+       
+-----> Build
+       Running build (yarn)
+       yarn run v1.22.11
+warning package.json: No license field
+       $ tsc
+       Done in 7.16s.
+       
+-----> Pruning devDependencies
+       yarn install v1.22.11
+       warning package.json: No license field
+       warning No license field
+       [1/4] Resolving packages...
+       [2/4] Fetching packages...
+       [3/4] Linking dependencies...
+       [4/4] Building fresh packages...
+       warning Ignored scripts due to flag.
+       Done in 0.61s.
+       
+-----> Caching build
+       - yarn cache
+       
+-----> Build succeeded!
+-----> Discovering process types
+       Procfile declares types     -> (none)
+       Default types for buildpack -> web
+-----> Compressing...
+       Done: 34.9M
+-----> Launching...
+       Released v3
+       https://elitedrift.herokuapp.com/ deployed to Heroku
+Build finished
+heroku.com
+Blogs
+Careers
+Documentation
+Support
